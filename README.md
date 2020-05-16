@@ -37,7 +37,7 @@ Pour lancer le programme, faire:
 
 Après ça, vous devez choisir si vous voulez être côté Client ou côté Serveur:
 
-![Optional Text](../master/images-readme/image_projet1.png)
+![Optional Text](../master/image-readme/image_projet1.png)
 
 Une fois fait, vous pouvez connecter plusieurs clients sur le même serveur et faire une discussion publique ou des messages privés.
 
