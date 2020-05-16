@@ -18,15 +18,21 @@ chat, le client doit écrire "/quit" et il est automatiquement déconnecté du c
 
 
 Schématisation du projet : C correspond au client, S correspond au serveur
+
 -Connexion au serveur du chat : S -> C : "Bienvenue dans le Chat tapez pseudo si vous voulez vous connecter"
 C -> S : "/pseudo" S -> C : "tapez le pseudo que vous voulez utiliser pour le chat :" C -> S : "Pseudo" S ->
 C : "Bienvenue Pseudo"
+
 -Liste des clients C -> S : "/list" S -> C : "Les personnes connectées sont : -pseudo1, -pseudo2 etc."
+
 -Messages publics : C -> S : "texte" S -> Cx(les autres clients) : "texte"
+
 -Messages privées : C1 -> S : "msg pseudoDeC2 texte" S -> C2 : "C1 vous a envoyer un message privé :
 texte"
-Déconnexion : C -> S : "/quit" S déconnecte C.
-Ping : S -> C : "ping" C -> S : "pong" si il n’y a pas de réponse "pong" du client au "ping" du serveur, au
+
+-Déconnexion : C -> S : "/quit" S déconnecte C.
+
+-Ping : S -> C : "ping" C -> S : "pong" si il n’y a pas de réponse "pong" du client au "ping" du serveur, au
 bout de X fois, il y a déconnexion du client qui ne répond pas.
 Restrictions : Le pseudo ne peut être composé que de ces caractères(lettres de l’alphabet, chiffres, tiret du
 bas, trait d’union) et ne doit comporter qu’entre 2 et 12 caractères.
